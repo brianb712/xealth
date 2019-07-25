@@ -1,0 +1,7 @@
+node_modules
+
+# Test coverage output
+coverage
+
+# Documentation output
+docs

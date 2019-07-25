@@ -1,0 +1,47 @@
+{
+  "name": "xealth",
+  "version": "1.0.0",
+  "description": "Xealth code exercise",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "generatedocs": "./node_modules/.bin/documentation build src/** -f html -o docs && open ./docs/index.html",
+    "start": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "test": "jest --verbose",
+    "test:coverage": "jest --coverage && open ./coverage/lcov-report/index.html",
+    "test:routes": "lab ./src/tests"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/good": "^8.2.0",
+    "@hapi/good-console": "^8.1.0",
+    "@hapi/good-squeeze": "^5.2.0",
+    "@hapi/hapi": "^18.3.1",
+    "@hapi/inert": "^5.2.1",
+    "@hapi/joi": "^15.1.0",
+    "@hapi/vision": "^5.5.2",
+    "blipp": "^4.0.0",
+    "hapi-swagger": "^10.0.2",
+    "http-status-codes": "^1.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-async-to-generator": "^7.5.0",
+    "@babel/preset-env": "^7.5.5",
+    "@hapi/code": "^5.3.1",
+    "@hapi/lab": "^19.1.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "documentation": "^12.0.3",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
