@@ -37,7 +37,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "clean-webpack-plugin": "^3.0.0",
-    "documentation": "^12.0.3",
+    "documentation": "^12.3.0",
     "jest": "^24.8.0",
     "nodemon": "^1.19.1",
     "webpack": "^4.36.1",
